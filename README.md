@@ -43,9 +43,11 @@ socket.on('join', (options, callback) => {
      callback()
      })
      ```
-
+     
+```
 ## Live App
 [Render Deployed Link] (https://bd-chat-app.onrender.com/)
+````
 
 
 
