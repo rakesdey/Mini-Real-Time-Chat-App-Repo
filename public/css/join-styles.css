@@ -1,0 +1,172 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ===== BODY (BANGLADESH FLAG THEME BACKGROUND) ===== */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at center, rgba(255, 0, 0, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at top left, #003d1f, #001a0d 60%, #000000 100%);
+
+    animation: bgPulse 6s ease-in-out infinite alternate;
+}
+
+/* background animation */
+@keyframes bgPulse {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(1.2);
+    }
+}
+
+/* ===== CENTERED FORM ===== */
+.centered-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== FORM BOX (GREEN GLOW) ===== */
+.centered-form__box {
+    background: rgba(0, 20, 10, 0.85);
+
+    border: 2px solid #00ff66;
+
+    border-radius: 12px;
+
+    padding: 40px 30px;
+
+    width: 350px;
+
+    box-shadow:
+        0 0 15px #00ff66,
+        0 0 35px rgba(0,255,100,0.4);
+
+    animation: greenGlow 2.5s infinite alternate;
+}
+
+/* green glow animation */
+@keyframes greenGlow {
+    from {
+        box-shadow:
+            0 0 10px #00cc44,
+            0 0 20px rgba(0,255,100,0.3);
+    }
+    to {
+        box-shadow:
+            0 0 20px #00ff66,
+            0 0 40px rgba(0,255,100,0.6);
+    }
+}
+
+/* ===== TITLE (RED GLOW LIKE FLAG CIRCLE) ===== */
+.centered-form__box h1 {
+    text-align: center;
+
+    color: #ff0033;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 0 10px #ff0033,
+        0 0 25px rgba(255,0,0,0.6);
+
+    animation: redGlow 2s infinite alternate;
+}
+
+@keyframes redGlow {
+    from {
+        text-shadow:
+            0 0 5px #cc0022,
+            0 0 15px rgba(255,0,0,0.4);
+    }
+    to {
+        text-shadow:
+            0 0 15px #ff0033,
+            0 0 35px rgba(255,0,0,0.8);
+    }
+}
+
+/* ===== LABEL ===== */
+.centered-form__box label {
+    color: #00ff66;
+    font-weight: bold;
+}
+
+/* ===== INPUT ===== */
+.centered-form__box input {
+
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border-radius: 6px;
+
+    border: 1px solid #00ff66;
+
+    background: rgba(0,0,0,0.4);
+
+    color: #00ff66;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.centered-form__box input:focus {
+
+    border-color: #ff0033;
+
+    box-shadow:
+        0 0 10px #ff0033,
+        0 0 20px rgba(255,0,0,0.4);
+}
+
+/* ===== BUTTON (RED + GREEN MIX) ===== */
+.centered-form__box button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    border: none;
+
+    background: linear-gradient(45deg, #006a2f, #ff0033);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 10px #00ff66,
+        0 0 20px rgba(255,0,0,0.5);
+
+    transition: 0.3s;
+}
+
+/* hover */
+.centered-form__box button:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 20px #00ff66,
+        0 0 40px rgba(255,0,0,0.8);
+}
