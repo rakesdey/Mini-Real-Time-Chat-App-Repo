@@ -7,13 +7,15 @@
 
 ### Frontend Setup
 
-`HTML` Code
+`HTML` &
+
 `CSS` Code
 
 
 ### Backend Setup
 
-`JAVASCRIPT` Code
+`JAVASCRIPT` &
+
 `Node Js` Code
 
 
@@ -40,11 +42,10 @@ socket.on('join', (options, callback) => {
 
      callback()
      })
-
      ```
 
-    ## Link
-     Render Deployed Link https://bd-chat-app.onrender.com/ (BD CHAT APP)
+## Live App
+Render Deployed Link ![BD CHAT APP](https://bd-chat-app.onrender.com)
 
 
 
