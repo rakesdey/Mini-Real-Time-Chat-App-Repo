@@ -6,22 +6,20 @@
 ![Folder Structure](./src/images/Folder%20Structure.PNG)
 
 ### Frontend Setup
-```
-HTML
-CSS
-```
+
+`HTML` Code
+`CSS` Code
+
 
 ### Backend Setup
-```
-JAVASCRIPT
-Node Js
-```
+
+`JAVASCRIPT` Code
+`Node Js` Code
+
 
 ## Main Package - Socket.io
 ### Admin & User Joining Code 
-```
-js
-
+``` js
 socket.on('join', (options, callback) => {
       const { error, user } = addUser({ id: socket.id, ...options })
 
@@ -45,7 +43,8 @@ socket.on('join', (options, callback) => {
 
      ```
 
-     <a href="https://bd-chat-app.onrender.com/" target="_blank">Live Deployed Render Link</a>
+    ## Link
+     Render Deployed Link https://bd-chat-app.onrender.com/ (BD CHAT APP)
 
 
 
