@@ -21,6 +21,7 @@ Node Js
 ### Admin & User Joining Code 
 ```
 js
+
 socket.on('join', (options, callback) => {
       const { error, user } = addUser({ id: socket.id, ...options })
 
@@ -41,9 +42,10 @@ socket.on('join', (options, callback) => {
 
      callback()
      })
+
      ```
 
-     ##**<a href="https://bd-chat-app.onrender.com/" target="_blank">Live Deployed Render Link</a>**
+     <a href="https://bd-chat-app.onrender.com/" target="_blank">Live Deployed Render Link</a>
 
 
 
